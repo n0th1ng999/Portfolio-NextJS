@@ -1,101 +1,89 @@
+"use client";
 import Image from "next/image";
+import { FileDown } from "lucide-react";
+import { Suspense, useEffect, useState } from "react";
+import H1 from "@/components/typography/H1";
+import H2 from "@/components/typography/H2";
+import { motion } from "motion/react";
+import AnimatedButton from "@/components/ui/AnimatedButton";
+import Ornament1 from "@/components/icons/Ornament1";
+import P from "@/components/typography/P";
+import Ornament2 from "@/components/icons/Ornament2";
+import PerspectiveGrid from "@/components/icons/PerspectiveGrid";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+	const content = () => {
+		return (
+			<div className="w-full h-full flex flex-col sm:flex-col md:flex-row items-center justify-center gap-4 sm:gap-4 md:gap-12 p-8 ">
+				<Ornament2 className="hidden sm:hidden md:flex" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+				<motion.div className="w-fit h-fit rotate-90 flex items-center gap-2 absolute top-[16rem] -right-28"></motion.div>
+				<div className="flex flex-col items-center gap-6 w-[200px] sm:w-[200px] md:w-[300px]">
+					<Suspense fallback={<>Loading...</>}>
+						<motion.div
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 0.5 }}
+							id="PictureContainer"
+							className="rounded-xl bg-slate-200 overflow-hidden "
+						>
+							<Image
+								alt="MyPicture"
+								src="/MyPicture.png"
+								width={300}
+								height={300}
+							/>
+						</motion.div>
+					</Suspense>
+					<Ornament1 className="text-text w-full h-8" />
+				</div>
+				<div id="HomeTextContainer">
+					<div className="mb-8">
+						<H1>Hello I'm Tiago Pereira! 👋</H1>
+						<H2>I'm a Full-Stack Developer and ML Engineer.</H2>
+						<P>Come and get to know me and my work.</P>
+					</div>
+					<div id="buttonContainer" className="flex gap-4">
+						<AnimatedButton className="text-xl ">
+							Download CV <FileDown size={48} />
+						</AnimatedButton>
+
+						<AnimatedButton className="text-xl " variant={"outline"}>
+							My Work
+						</AnimatedButton>
+					</div>
+				</div>
+			</div>
+		);
+	};
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const resizeListener = () => {
+			setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+		};
+
+		resizeListener();
+
+		window.addEventListener("resize", resizeListener);
+
+		return () => window.removeEventListener("resize", resizeListener);
+	}, []);
+
+	if (isMobile) {
+		return (
+			<ScrollArea className="w-full h-full">
+				<PerspectiveGrid />
+				{content()}
+			</ScrollArea>
+		);
+	}
+
+	return (
+		<>
+			<PerspectiveGrid />
+			{content()}
+		</>
+	);
 }

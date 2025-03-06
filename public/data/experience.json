@@ -1,0 +1,36 @@
+[
+	{
+		"title": "title1",
+		"company": "company",
+		"date": "2024",
+		"text": "I wanna be me until i die and that's on god nigga \n\n forever steppin' in this bitch",
+		"type": "Experience",
+		"experience_tags": ["Data Science", "Data Analysis"],
+		"experience_skills": ["Scikit-learn", "Data Plot"],
+		"experience_links": [
+			{
+				"url": "https://github.com/nigga999/data-science-project",
+				"buttonContent": "GitHub Repository",
+				"downloadableContent": "GitHub Repository",
+				"type": "github"
+			}
+		]
+	},
+	{
+		"title": "title2",
+		"company": "company",
+		"date": "2024",
+		"text": "I wanna be me until i die and that's on god nigga \n forever steppin' in this bitch",
+		"type": "Education",
+		"experience_tags": ["Data Science", "Data Analysis"],
+		"experience_skills": ["Scikit-learn", "Data Plot"],
+		"experience_links": [
+			{
+				"url": "https://github.com/nigga999/data-science-project",
+				"buttonContent": "GitHub Repository",
+				"downloadableContent": "GitHub Repository",
+				"type": "github"
+			}
+		]
+	}
+]

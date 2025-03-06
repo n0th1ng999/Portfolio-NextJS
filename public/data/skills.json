@@ -1,0 +1,24 @@
+[
+	{
+		"type": "Backend",
+		"badges": [
+			{
+				"name": "Express",
+				"imageUrl": "",
+				"description": "",
+				"level": 80
+			}
+		]
+	},
+	{
+		"type": "Frontend",
+		"badges": [
+			{
+				"name": "React",
+				"imageUrl": "",
+				"description": "",
+				"level": 75
+			}
+		]
+	}
+]
