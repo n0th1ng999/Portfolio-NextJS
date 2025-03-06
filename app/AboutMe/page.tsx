@@ -6,10 +6,9 @@ import CardSkills from "./CardSkills";
 import CardBio from "./CardBio";
 import CardExperience from "./CardExperience";
 
-function page() {
+function AboutMe() {
 	const [isExperienceCardHovered, setIsExperienceCardHovered] = useState(false);
 	const [isSkillsCardHovered, setIsSkillsCardHovered] = useState(false);
-
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -103,4 +102,4 @@ function page() {
 	);
 }
 
-export default page;
+export default AboutMe;

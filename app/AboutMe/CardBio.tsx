@@ -1,11 +1,11 @@
 import React from "react";
 import H1 from "@/components/typography/H1";
-import H4 from "@/components/typography/H4";
+
 import P from "@/components/typography/P";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "motion/react";
 import Image from "next/image";
-import FadeInBottom from "@/components/ui/FadeInBottom";
+
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 function CardBio() {

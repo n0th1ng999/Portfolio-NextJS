@@ -10,7 +10,7 @@ import Ornament1 from "@/components/icons/Ornament1";
 import P from "@/components/typography/P";
 import Ornament2 from "@/components/icons/Ornament2";
 import PerspectiveGrid from "@/components/icons/PerspectiveGrid";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
 	const content = () => {
@@ -40,8 +40,8 @@ export default function Home() {
 				</div>
 				<div id="HomeTextContainer">
 					<div className="mb-8">
-						<H1>Hello I'm Tiago Pereira! 👋</H1>
-						<H2>I'm a Full-Stack Developer and ML Engineer.</H2>
+						<H1>{"Hello I'm Tiago Pereira! 👋"}</H1>
+						<H2>{"I'm a Full-Stack Developer and ML Engineer."}</H2>
 						<P>Come and get to know me and my work.</P>
 					</div>
 					<div id="buttonContainer" className="flex gap-4">

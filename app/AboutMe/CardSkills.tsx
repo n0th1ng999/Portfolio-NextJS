@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
-import { animate, motion, useMotionValue, useTransform } from "motion/react";
+import {  motion } from "motion/react";
 import Image from "next/image";
 import React, { Suspense, useEffect, useState } from "react";
 

@@ -1,15 +1,10 @@
-import type { Metadata } from "next";
-import { Space_Grotesk, Hanken_Grotesk } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const hankenGrotesk = Hanken_Grotesk({
 	variable: "--font-hanken-grotesk",
-});
-
-const spaceGrotesk = Space_Grotesk({
-	variable: "--font-space-grotesk",
 	subsets: ["latin"],
 	style: ["normal"],
 });

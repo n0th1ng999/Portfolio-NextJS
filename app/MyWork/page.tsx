@@ -57,7 +57,7 @@ function WorkCard({
 	);
 }
 
-function page() {
+function MyWork() {
 	const [filter, SetFilter] = useState<string>("");
 
 	type projectsResData = {
@@ -224,4 +224,4 @@ function page() {
 	);
 }
 
-export default page;
+export default MyWork;

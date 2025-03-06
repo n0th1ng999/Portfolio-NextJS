@@ -13,16 +13,20 @@ import AnimatedContainer from "./ui/AnimatedContainer";
 function Footer() {
 	// Detect system preference on mount
 	const [isDark, setIsDark] = useState<boolean>(() => {
-		const darkModePreference = localStorage.getItem("darkMode");
+		if (typeof window !== "undefined") {
+			const darkModePreference = localStorage.getItem("darkMode");
 
-		if (darkModePreference === "true") {
-			return true;
-		} else if (darkModePreference === "false") {
-			return false;
-		} else {
-			const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-			return mediaQuery.matches;
+			if (darkModePreference === "true") {
+				return true;
+			} else if (darkModePreference === "false") {
+				return false;
+			} else {
+				const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+				return mediaQuery.matches;
+			}
 		}
+
+		return false;
 	});
 
 	useEffect(() => {

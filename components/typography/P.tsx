@@ -12,6 +12,8 @@ function P({
 	delay?: number;
 	duration?: number;
 }) {
+	const [visible, setVisible] = useState(false);
+	
 	if (typeof children !== "string") {
 		console.warn("P component expects a string as children.");
 		return <p className={className}>{children}</p>;
@@ -22,7 +24,6 @@ function P({
 	let currentCharIndex = 0; // Keeps track of the character position across paragraphs
 	const division = children.replace(/\s+/g, "").length / duration; // Avoids spacing affecting delay
 
-	const [visible, setVisible] = useState(false);
 
 	return (
 		<p className={className || " leading-7 [&:not(:first-child)]:mt-6 "}>

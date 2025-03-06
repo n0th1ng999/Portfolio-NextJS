@@ -12,6 +12,8 @@ function H4({
 	delay?: number;
 	duration?: number;
 }) {
+	const [visible, setVisible] = useState(false);
+
 	if (typeof children !== "string") {
 		console.warn("P component expects a string as children.");
 		return <p className={className}>{children}</p>;
@@ -22,7 +24,6 @@ function H4({
 	let currentCharIndex = 0; // Keeps track of the character position across paragraphs
 	const division = children.replace(/\s+/g, "").length / duration; // Avoids spacing affecting delay
 
-	const [visible, setVisible] = useState(false);
 
 	return (
 		<h4
@@ -33,7 +34,7 @@ function H4({
 			{paragraphs.map((paragraph, pIndex) => (
 				<React.Fragment key={pIndex}>
 					{pIndex > 0 && <br />}
-					{paragraph.split("").map((char, cIndex) => {
+					{paragraph.split("").map((char) => {
 						currentCharIndex += 1;
 						return (
 							<motion.span

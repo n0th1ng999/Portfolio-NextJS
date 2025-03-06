@@ -2,22 +2,20 @@
 import PerspectiveGrid from "@/components/icons/PerspectiveGrid";
 import H1 from "@/components/typography/H1";
 import H2 from "@/components/typography/H2";
-import H3 from "@/components/typography/H3";
 import H4 from "@/components/typography/H4";
 import P from "@/components/typography/P";
 import AnimatedButton from "@/components/ui/AnimatedButton";
 import AnimatedCard from "@/components/ui/AnimatedCard";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Mail, Newspaper, Send } from "lucide-react";
-
 import React, { useEffect, useState } from "react";
 
-function page() {
+function Contact() {
 	const [subject, setSubject] = useState("");
 	const [body, setBody] = useState("");
 
@@ -143,4 +141,4 @@ function page() {
 	);
 }
 
-export default page;
+export default Contact;
