@@ -22,7 +22,7 @@ const SkillSubcard = ({
 }) => {
 	const [barPercentage, setBarPercentage] = useState(0);
 	const [isFlipped, setIsFlipped] = useState(false);
-	console.log(percentage);
+
 	return (
 		<motion.div
 			className="relative aspect-square perspective-1000"
@@ -118,7 +118,7 @@ function CardSkills() {
 			const resData = (await res.json()) as skillsResData;
 
 			setData(resData);
-			console.log(resData);
+	
 			setIsLoading(false);
 		} catch (error) {
 			setError(true);
