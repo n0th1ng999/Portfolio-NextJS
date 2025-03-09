@@ -1,35 +1,96 @@
 [
 	{
-		"title": "title1",
-		"company": "company",
+		"title": "Data Scientist - Green Streaming",
+		"company": "Mog Technologies",
 		"date": "2024",
-		"text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. \n\n Fusce ut risus porta, sollicitudin ipsum ut, cursus augue. Pellentesque nec scelerisque felis. Aliquam sed iaculis urna. Nulla auctor finibus orci, non rhoncus sapien pharetra ut. Morbi placerat, turpis vel rutrum commodo, risus magna dapibus ligula, vel vulputate nisl arcu id velit. Maecenas eget hendrerit eros. Pellentesque fermentum lectus leo, sed rhoncus tellus tempor eu. Pellentesque vehicula interdum tristique. Quisque quis lorem posuere, mollis quam sed, dignissim enim. ",
+		"text": "For the last four months of my undergraduate studies, I have completed an internship during which I worked on a novel project at Mog Technologies, an OTT-TV provider. My work concentrated on video chunking HTTP traffic request logs in an effort to find ways to apply Green Streaming.\n\nAs a result, I was able to determine the geographic location of users and the type of connection they were using (whether or not they were capable of streaming in HD), the time of day when users were most active, and the type of device being used.\n\nUsing the insights described above, I created a proposal that would help in reducing storage space required for Video on Demand (VOD) assets by approximately 15%. This would reduce the energy used to provide the content and would have a reduced negative impact on users experience as measured in Quality of Experience (QoE).\n\nAt the end of the internship, I designed a model that predicts the most likely streaming resolution a user would request depending on their geographic location, the time of the request and the device at time they are using, using their traffic data to train the model. The model's accuracy is greater than 80%. This would allow service providers to decrease the quality of streaming dynamically to enhance efficiency.",
 		"type": "Experience",
-		"experience_tags": ["Data Science", "Data Analysis"],
-		"experience_skills": ["Scikit-learn", "Data Plot"],
+		"experience_tags": [
+			"Data Science",
+			"Data Analysis",
+			"Green Streaming",
+			"OTT-TV",
+			"Streaming"
+		],
+		"experience_skills": [
+			"Python",
+			"Supervised Machine Learning",
+			"Scikit-learn",
+			"Matplotlib",
+			"Ploty"
+		],
 		"experience_links": [
 			{
-				"url": "https://github.com/n0th1ng999",
-				"buttonContent": "GitHub Repository",
-				"downloadableContent": "GitHub Repository",
-				"type": "github"
+				"url": "/files/projects/Project Emerald Relatório - Tiago Pereira 40210190.pdf",
+				"buttonContent": "Report",
+				"downloadableContent": "",
+				"type": "report"
 			}
 		]
 	},
 	{
-		"title": "title2",
-		"company": "company",
-		"date": "2024",
-		"text": "Nullam placerat dapibus ipsum, lacinia volutpat purus facilisis at. Praesent a pretium tellus. Donec commodo nunc a nisi fermentum ultrices. Sed fringilla, tellus sed convallis finibus, tellus ante tempus enim, in fringilla massa neque eget lectus. Duis feugiat porttitor orci, ac sodales urna posuere quis. Cras ut aliquet dui. Aenean in sapien porta lorem gravida tempus. Curabitur fringilla sapien non massa scelerisque, ut dignissim lorem blandit. Nulla molestie auctor orci, eu consectetur nisl lobortis at. Ut suscipit mi neque, sed scelerisque neque tristique sollicitudin. Ut accumsan arcu nec enim auctor, et porta velit ornare. Fusce lobortis eleifend nunc, in hendrerit sapien venenatis ac. Maecenas mattis volutpat tristique. Integer auctor nunc nec dolor bibendum, fermentum vestibulum magna luctus. Nulla aliquam maximus felis quis ullamcorper.  \nPhasellus risus ante, maximus vitae lectus non, semper dapibus sem. Proin tristique lectus sit amet tortor pretium, in placerat mauris maximus. Suspendisse potenti. Sed viverra, mi quis dapibus molestie, arcu odio porta risus, nec dignissim urna velit sit amet tortor. Sed ac dictum enim. Suspendisse varius laoreet est eget mattis. Cras placerat leo quis gravida blandit. Vestibulum id ex consectetur, maximus arcu nec, bibendum felis. Duis vel dictum mi. Maecenas ultrices, urna vitae congue aliquam, odio purus posuere dui, id cursus urna sapien sit amet nunc. ",
+		"title": "Information Systems Management and Programming Technician",
+		"company": "Professional School Ruiz Costa",
+		"date": "2018/2021",
+		"text": "What I learned during the course: \n\n- Master programming techniques, identify key programming languages, develop web applications, and program using object-oriented languages;\n\n- Analyze and implement Database Management Systems;\n\n- Utilize solutions based on Client/Server Architecture;\n\n- Install, configure, and maintain computers, networks, peripherals, operating systems, and software applications;\n\n- Administer and manage the security of IT systems and data communication networks.",
 		"type": "Education",
-		"experience_tags": ["Data Science", "Data Analysis"],
-		"experience_skills": ["Scikit-learn", "Data Plot"],
+		"experience_tags": ["Programming", "IT Technician"],
+		"experience_skills": [
+			"C++",
+			"C#",
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"PHP",
+			"Microsoft SQL Server",
+			"Network Administration",
+			"System Administration"
+		],
 		"experience_links": [
 			{
-				"url": "https://github.com/n0th1ng999",
-				"buttonContent": "GitHub Repository",
-				"downloadableContent": "GitHub Repository",
-				"type": "github"
+				"url": "https://www.ruizcosta.edu.pt/cursos/gestao-e-programacao-de-sistemas-informaticos/",
+				"buttonContent": "See More",
+				"downloadableContent": "",
+				"type": "link"
+			}
+		]
+	},
+	{
+		"title": "Technologies and Information Systems for the Web",
+		"company": "ESMAD",
+		"date": "2021/2025",
+		"text": "Through this degree, I developed a strong multidisciplinary foundation in web technologies, focusing on designing, developing, and optimizing web-based products and software. I gained hands-on experience with cloud-based services, mobile and ubiquitous computing, and e-business platforms. Additionally, I honed essential skills in interaction design, usability, user experience (UX), and digital platform prototyping, ensuring that the solutions I build are both functional and user-centric.",
+		"type": "Education",
+		"experience_tags": [
+			"UI/UX",
+			"FullStack Development",
+			"Mobile Development",
+			"Unit Testing"
+		],
+		"experience_skills": [
+			"Python",
+			"JavaScript",
+			"TypeScript",
+			"Vue",
+			"React",
+			"Express",
+			"MongoDB",
+			"MySQL",
+			"GraphQL",
+			"React Native",
+			"Jest",
+			"GIT"
+		],
+		"experience_links": [
+			{
+				"url": "https://www.esmad.ipp.pt/courses/degree/663",
+				"buttonContent": "See More",
+				"type": "link"
+			},
+			{
+				"url": "",
+				"buttonContent": "Diploma",
+				"type": "link"
 			}
 		]
 	}

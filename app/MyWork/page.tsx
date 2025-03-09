@@ -31,23 +31,29 @@ function WorkCard({
 		<motion.div
 			layout
 			exit={{ opacity: 0, scale: 0 }}
-			className="h-96 w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4"
+			className="min-h-96 max-h-fit w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4"
 		>
-			<AnimatedCard className="h-full w-full overflow-hidden ">
+			<AnimatedCard className="h-full w-full">
 				{/** PLACEHOLDER */}
-				<div className="w-full h-3/5 bg-secondary">
+				<div className="h-3/5 w-full bg-secondary border-b">
 					{bannerUrl && (
-						<Image src={bannerUrl} width={1000} height={500} alt={title} />
+						<Image
+							className="w-full h-full object-cover"
+							src={bannerUrl}
+							width={1000}
+							height={500}
+							alt={title}
+						/>
 					)}
 				</div>
 
-				<div className="w-full h-2/5 flex flex-col p-4 justify-between">
+				<div className="w-full min-h-2/5 max-h-fit flex flex-col p-4 justify-between ">
 					<div>
 						<H3 className="text-sm text-secondary-foreground">{type}</H3>
 						<H2>{title}</H2>
 					</div>
-					<a href={url}>
-						<AnimatedButton className="p-0" variant="link">
+					<a href={url} className="w-fit">
+						<AnimatedButton className="p-0 w-fit" variant="link">
 							View Project <ArrowRight />
 						</AnimatedButton>
 					</a>
@@ -64,8 +70,8 @@ function MyWork() {
 		typeName: string;
 		projects: {
 			title: string;
-			bannerURL: string;
-			projectURL: string;
+			bannerUrl: string;
+			projectUrl: string;
 		}[];
 	}[];
 
@@ -142,8 +148,8 @@ function MyWork() {
 								key={project.title}
 								title={project.title}
 								type={projectsByType.typeName}
-								url={project.projectURL}
-								bannerUrl={project.bannerURL}
+								url={project.projectUrl}
+								bannerUrl={project.bannerUrl}
 							/>
 						);
 					});
@@ -155,7 +161,7 @@ function MyWork() {
 
 		return (
 			<>
-				<div className="flex gap-4">
+				<div className="flex gap-4 flex-wrap">
 					<Badge
 						key={-1}
 						variant={filter === "" ? "default" : "secondary"}
@@ -205,14 +211,14 @@ function MyWork() {
 	return (
 		<>
 			<div className="w-full h-full relative overflow-hidden ">
-				<ScrollArea className="w-full h-full p-12">
+				<ScrollArea className="w-full h-full p-4 sm:p-4 md:p-12 ">
 					<H1
 						className=" text-4xl 
 						font-extrabold tracking-tight
 						lg:text-5xl block relative
 						mb-6"
 					>
-						My Projects
+						Featured Projects
 					</H1>
 					{/**Filters */}
 

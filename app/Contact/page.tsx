@@ -33,39 +33,37 @@ function Contact() {
 							</CardTitle>
 						</CardHeader>
 						<CardContent className="flex w-full flex-col h-full gap-4">
-							
-								<Label htmlFor="InputSubject">Subject</Label>
-								<Input
-									onChange={(ev) => {
-										setSubject(ev.target.value);
-									}}
-									id="InputSubject"
-								></Input>
-								<Label htmlFor="InputMessage">Message</Label>
-								<Textarea
-									onChange={(ev) => {
-										setBody(ev.target.value);
-									}}
-									className="h-full"
-									id="InputMessage"
-								></Textarea>
+							<Label htmlFor="InputSubject">Subject</Label>
+							<Input
+								onChange={(ev) => {
+									setSubject(ev.target.value);
+								}}
+								id="InputSubject"
+							></Input>
+							<Label htmlFor="InputMessage">Message</Label>
+							<Textarea
+								onChange={(ev) => {
+									setBody(ev.target.value);
+								}}
+								className="h-full resize-none"
+								id="InputMessage"
+							></Textarea>
 
-								<div className="flex w-full flex-wrap gap-2">
-									<a
-										className="w-fit"
-										href={`mailto:tigasdeveloper@gmail.com?subject=${subject}&body=${body}`}
-									>
-										<Button className="w-full ">
-											Send Email <Send />
-										</Button>
-									</a>
-									<a href={`mailto:tigasdeveloper@gmail.com`}>
-										<Button variant="link" className="w-fit self-center px-1">
-											<P> TigasDeveloper@gmail.com</P>
-										</Button>
-									</a>
-								</div>
-							
+							<div className="flex w-full flex-wrap gap-2">
+								<a
+									className="w-fit"
+									href={`mailto:tigasdeveloper@gmail.com?subject=${subject}&body=${body}`}
+								>
+									<Button className="w-full ">
+										Send Email <Send />
+									</Button>
+								</a>
+								<a href={`mailto:tigasdeveloper@gmail.com`}>
+									<Button variant="link" className="w-fit self-center px-1">
+										<P> TigasDeveloper@gmail.com</P>
+									</Button>
+								</a>
+							</div>
 						</CardContent>
 					</AnimatedCard>
 				</div>

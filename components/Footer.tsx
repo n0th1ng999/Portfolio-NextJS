@@ -12,6 +12,7 @@ import AnimatedContainer from "./ui/AnimatedContainer";
 
 function Footer() {
 	// Detect system preference on mount
+	const [thisYear, setThisYear] = useState<number>();
 	const [isDark, setIsDark] = useState<boolean>(() => {
 		if (typeof window !== "undefined") {
 			const darkModePreference = localStorage.getItem("darkMode");
@@ -38,6 +39,10 @@ function Footer() {
 			localStorage.setItem("darkMode", "false");
 		}
 	}, [isDark]);
+
+	useEffect(() => {
+		setThisYear(new Date().getFullYear());
+	}, []);
 
 	return (
 		<div className="bg-background flex items w-full h-fit bottom-0 left-0 justify-between py-4 px-8 sm:px-8 md:px-16  z-20 border-t ">
@@ -75,6 +80,7 @@ function Footer() {
 			</div>
 
 			<AnimatedContainer className="flex gap-4 items-center">
+				{/*
 				<ToggleGroup type="single" defaultValue="english">
 					<ToggleGroupItem
 						disabled
@@ -85,8 +91,9 @@ function Footer() {
 					</ToggleGroupItem>
 					<ToggleGroupItem className="text-xl aspect-square" value="english">
 						󠁧&#127468;&#127463;
-					</ToggleGroupItem>
+					</ToggleGroupItem> 
 				</ToggleGroup>
+				*/}
 				<div className="flex gap-2">
 					{isDark ? <Moon /> : <Sun />}
 					<Switch

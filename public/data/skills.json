@@ -4,9 +4,33 @@
 		"badges": [
 			{
 				"name": "Express",
-				"imageUrl": "",
+				"imageUrl": "https://img.icons8.com/?size=500&id=WNoJgbzDr3i2&format=png&color=000000",
 				"description": "",
-				"level": 80
+				"level": 85
+			},
+			{
+				"name": "Node.js",
+				"imageUrl": "https://img.icons8.com/?size=500&id=hsPbhkOH4FMe&format=png&color=000000",
+				"description": "",
+				"level": 85
+			},
+			{
+				"name": "MongoDB",
+				"imageUrl": "https://img.icons8.com/?size=500&id=8rKdRqZFLurS&format=png&color=000000",
+				"description": "",
+				"level": 65
+			},
+			{
+				"name": "MySQL",
+				"imageUrl": "https://img.icons8.com/?size=500&id=UFXRpPFebwa2&format=png&color=000000",
+				"description": "",
+				"level": 85
+			},
+			{
+				"name": "GraphQL",
+				"imageUrl": "https://img.icons8.com/?size=500&id=H1KbyT4SuFDe&format=png&color=000000",
+				"description": "",
+				"level": 45
 			}
 		]
 	},
@@ -15,7 +39,67 @@
 		"badges": [
 			{
 				"name": "React",
-				"imageUrl": "",
+				"imageUrl": "/imgs/skills/ReactLogo.svg",
+				"description": "",
+				"level": 75
+			},
+
+			{
+				"name": "Next",
+				"imageUrl": "https://img.icons8.com/?size=500&id=MWiBjkuHeMVq&format=png&color=000000",
+				"description": "",
+				"level": 72
+			},
+			{
+				"name": "Tailwind",
+				"imageUrl": "https://img.icons8.com/?size=500&id=4PiNHtUJVbLs&format=png&color=000000",
+				"description": "",
+				"level": 80
+			},
+			{
+				"name": "Vue",
+				"imageUrl": "https://img.icons8.com/?size=500&id=rY6agKizO9eb&format=png&color=000000",
+				"description": "",
+				"level": 40
+			}
+		]
+	},
+	{
+		"type": "Data Science",
+		"badges": [
+			{
+				"name": "Pandas",
+				"imageUrl": "https://img.icons8.com/?size=500&id=xSkewUSqtErH&format=png&color=000000",
+				"description": "",
+				"level": 85
+			},
+			{
+				"name": "NumPy",
+				"imageUrl": "https://img.icons8.com/?size=500&id=aR9CXyMagKIS&format=png&color=000000",
+				"description": "",
+				"level": 70
+			},
+			{
+				"name": "Matplotlib",
+				"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/Created_with_Matplotlib-logo.svg",
+				"description": "",
+				"level": 80
+			},
+			{
+				"name": "Seaborn",
+				"imageUrl": "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg",
+				"description": "",
+				"level": 75
+			},
+			{
+				"name": "Plotly",
+				"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Plotly-logo.png",
+				"description": "",
+				"level": 85
+			},
+			{
+				"name": "Scikit-learn",
+				"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png",
 				"description": "",
 				"level": 75
 			}

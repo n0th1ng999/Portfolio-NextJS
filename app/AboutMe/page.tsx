@@ -29,7 +29,7 @@ function AboutMe() {
 			<div className="w-full h-full overflow-hidden relative overflow-y-auto">
 				<div
 					id="CardGrid"
-					className="w-full h-full flex flex-col lg:flex-row items-start justify-start p-8 sm:p-8 md:p-10 lg:p-12   xl:p-20 gap-12"
+					className="w-full h-full flex flex-col lg:flex-row items-start justify-start p-4 sm:p-4 md:p-10 lg:p-12   xl:p-20 gap-12"
 				>
 					<CardBio />
 

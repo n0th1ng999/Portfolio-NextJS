@@ -5,18 +5,18 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
-import {  motion } from "motion/react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import React, { Suspense, useEffect, useState } from "react";
 
 const SkillSubcard = ({
 	name = "",
-	badgeUrl,
+	imageUrl,
 	description = "",
 	percentage,
 }: {
 	name: string;
-	badgeUrl: string;
+	imageUrl: string;
 	description?: string;
 	percentage: number;
 }) => {
@@ -54,14 +54,16 @@ const SkillSubcard = ({
 						initial={{ backfaceVisibility: "hidden", rotateY: 0 }}
 						variants={{ hovering: { rotateY: 180 } }}
 					>
-						<Card className="w-full h-full grid place-content-center p-2 sm:p-2 md:p-4 lg:p-6 xl:p-8">
-							<Image
-								width={300}
-								height={300}
-								src={"http://localhost:1337" + badgeUrl}
-								alt={name + " Badge"}
-								className="w-full h-full"
-							/>
+						<Card className="w-full h-full flex justify-center items-center p-4 sm:p-4 md:p-6 lg:p-8 xl:p-10">
+							{imageUrl && (
+								<Image
+									width={300}
+									height={300}
+									src={imageUrl}
+									alt={name + " Badge"}
+									className="w-full h-full object-contain"
+								/>
+							)}
 						</Card>
 					</motion.div>
 					{/**BackSide */}
@@ -118,7 +120,7 @@ function CardSkills() {
 			const resData = (await res.json()) as skillsResData;
 
 			setData(resData);
-	
+
 			setIsLoading(false);
 		} catch (error) {
 			setError(true);
@@ -153,12 +155,12 @@ function CardSkills() {
 						return (
 							<div className="flex flex-col gap-4" key={skillType.type}>
 								<H4>{skillType.type}</H4>
-								<div className="h-fit grid grid-rows-auto grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-8">
+								<div className="h-fit grid grid-rows-auto grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-8">
 									{skillType.badges.map((skill, i) => (
 										<SkillSubcard
 											key={i}
 											name={skill.name}
-											badgeUrl={skill.imageUrl}
+											imageUrl={skill.imageUrl}
 											description={skill.description}
 											percentage={skill.level}
 										/>

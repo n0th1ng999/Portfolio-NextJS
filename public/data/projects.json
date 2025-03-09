@@ -1,10 +1,29 @@
 [
 	{
+		"typeName": "ML & Data Analysis",
+		"projects": [
+			{
+				"title": "Project Emerald - Green Streaming",
+				"description": "description",
+				"bannerUrl": "/imgs/projects/ProjectEmerald.png",
+				"projectUrl": "/files/projects/Project Emerald Relatório - Tiago Pereira 40210190.pdf"
+			}
+		]
+	},
+	{
 		"typeName": "Frontend",
 		"projects": [
 			{
-				"title": "title1",
-				"description": "description"
+				"title": "NextJS Portfolio",
+				"description": "Using Tailwind and React I created a terminal style portfolio inspired in 8bit aesthetic.",
+				"bannerUrl": "/imgs/projects/NextJsPortfolio.png",
+				"projectUrl": "https://github.com/n0th1ng999/Portfolio-NextJS"
+			},
+			{
+				"title": "Terminal Portfolio",
+				"description": "Using Tailwind and React I created a terminal style portfolio inspired in 8bit aesthetic.",
+				"bannerUrl": "/imgs/projects/terminalPortfolio.png",
+				"projectUrl": "https://terminal-portfolio-orcin.vercel.app/"
 			}
 		]
 	},
@@ -12,28 +31,28 @@
 		"typeName": "Backend",
 		"projects": [
 			{
-				"title": "title2",
-				"description": "description"
+				"title": "MediMetrics",
+				"description": "GraphQL api for Health Monitoring & Bed Management in a Hospital Unit.",
+				"bannerUrl": "/imgs/projects/MediMetrics.png",
+				"projectUrl": "https://github.com/n0th1ng999/medi-metrics/"
 			}
 		]
 	},
+
 	{
 		"typeName": "FullStack",
 		"projects": [
 			{
-				"title": "title3",
-				"description": "description"
-			}
-		]
-	},
-	{
-		"typeName": "Backend",
-		"projects": [
+				"title": "AllerGenius Mobile App",
+				"bannerUrl": "/imgs/projects/Allergenius.png",
+				"projectUrl": "https://github.com/n0th1ng999/Allergenius-Mobile",
+				"description": "Development of an Allergy Tracker for Supermarket Goods mobile application using React Native and Express, for tracking and managing allergens in the user's household."
+			},
 			{
-				"title": "title4",
-				"description": "description",
-				"bannerUrl": "/imgs/projects/",
-				"projectUrl": "https://github.com/"
+				"title": "BeeBroker MQTT Project",
+				"bannerUrl": "/imgs/projects/BeeBroker.png",
+				"projectUrl": "https://gitlab.com/esmad/esmapp/esmapp-2324/group-5/-/tree/dev?ref_type=heads",
+				"description": "Creation of a MQTTBroker with JS that uses TCP and WebSockets to interface respectively with multiple simulated sensors (publishers) and a webapp (subscriber)."
 			}
 		]
 	}

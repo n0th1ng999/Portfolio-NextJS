@@ -10,8 +10,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
-import { DownloadIcon, Github, NotebookText } from "lucide-react";
+import { DownloadIcon, Github, LinkIcon, NotebookText } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 function SubCardExperience({
@@ -32,7 +33,7 @@ function SubCardExperience({
 	links: {
 		url: string;
 		buttonContent: string;
-		type: "download" | "report" | "github";
+		type: "download" | "report" | "github" | "link";
 	}[];
 }) {
 	return (
@@ -95,20 +96,19 @@ function SubCardExperience({
 						case "github":
 							Icon = <Github />;
 							break;
+						case "link":
+							Icon = <LinkIcon />;
+							break;
 						default:
 							Icon = null;
 					}
 
 					return (
-						<a
-							key={i}
-							className="w-fit h-fit"
-							href={"http://localhost:1337" + link.url}
-						>
+						<Link key={i} className="w-fit h-fit" href={link.url}>
 							<AnimatedButton>
 								{link.buttonContent} {Icon}
 							</AnimatedButton>
-						</a>
+						</Link>
 					);
 				})}
 			</div>
@@ -128,7 +128,7 @@ type StrapiApiExperienceRes = {
 		url: string;
 		buttonContent: string;
 		downloadableContent: string;
-		type: "download" | "report" | "github";
+		type: "download" | "report" | "github" | "link";
 	}[];
 	strapiId: number;
 }[];

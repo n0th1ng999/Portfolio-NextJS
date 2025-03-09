@@ -44,16 +44,9 @@ function CardBio() {
 								</div>
 								<div className="flex flex-col gap-2 w-2/3 justify-end">
 									<P className=" [&:not(:first-child)]:mt-0 font-bold text-lg">
-										Name : Tiago Gabriel
-									</P>
-									<P className=" [&:not(:first-child)]:mt-0 font-bold text-lg">
-										Age: 22
-									</P>
-									<P className=" [&:not(:first-child)]:mt-0 font-bold text-lg">
-										Nationality: Portuguese
-									</P>
-									<P className=" [&:not(:first-child)]:mt-0 font-bold text-lg">
-										From: Porto, Portugal
+										{
+											"Name : Tiago Gabriel\nAge: 22\nNationality: Portuguese\nFrom: Porto, Portugal"
+										}
 									</P>
 								</div>
 							</div>

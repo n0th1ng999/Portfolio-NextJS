@@ -11,6 +11,7 @@ import P from "@/components/typography/P";
 import Ornament2 from "@/components/icons/Ornament2";
 import PerspectiveGrid from "@/components/icons/PerspectiveGrid";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import Link from "next/link";
 
 export default function Home() {
 	const content = () => {
@@ -48,10 +49,11 @@ export default function Home() {
 						<AnimatedButton className="text-xl ">
 							Download CV <FileDown size={48} />
 						</AnimatedButton>
-
-						<AnimatedButton className="text-xl " variant={"outline"}>
-							My Work
-						</AnimatedButton>
+						<Link href="/MyWork">
+							<AnimatedButton className="text-xl " variant={"outline"}>
+								My Work
+							</AnimatedButton>
+						</Link>
 					</div>
 				</div>
 			</div>

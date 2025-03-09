@@ -73,7 +73,7 @@ function Navbar() {
 							<Menu size={36} />
 						</AnimatedButton>
 					</DrawerTrigger>
-					<DrawerContent className="h-full w-1/2 rounded-r-xl rounded-l-none border-r border-t-0 border-b-0 p-6 gap-4">
+					<DrawerContent className="h-full w-1/2  rounded-r-xl rounded-l-none border-r border-t-0 border-b-0 p-6 gap-4">
 						<DrawerTitle></DrawerTitle>
 						<div className="flex w-full h-fit gap-4 mb-2">
 							<DrawerClose onClick={() => setIsDrawerOpen(false)}>

@@ -4,10 +4,11 @@ const nextConfig: NextConfig = {
 	/* config options here */
 	images: {
 		remotePatterns: [
-			{ protocol: "https", hostname: "www.google.com" },
-			{ protocol: "https", hostname: "picsum.photos" },
-			{ protocol: "https", hostname: "raw.githubusercontent.com" },
+			{ protocol: "https", hostname: "img.icons8.com" },
 			{ protocol: "http", hostname: "localhost" },
+			{ protocol: "https", hostname: "cdn.brandfetch.io" },
+			{ protocol: "https", hostname: "upload.wikimedia.org" },
+			{ protocol: "https", hostname: "seaborn.pydata.org" },
 		],
 	},
 };
