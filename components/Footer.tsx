@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Switch } from "@/components/ui/switch";
 import P from "./typography/P";
 
-import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
+//import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
 import { Github, Linkedin, Mail, Moon, Sun } from "lucide-react";
 
 import Link from "next/link";
@@ -12,7 +12,7 @@ import AnimatedContainer from "./ui/AnimatedContainer";
 
 function Footer() {
 	// Detect system preference on mount
-	const [thisYear, setThisYear] = useState<number>();
+
 	const [isDark, setIsDark] = useState<boolean>(() => {
 		if (typeof window !== "undefined") {
 			const darkModePreference = localStorage.getItem("darkMode");
@@ -39,10 +39,6 @@ function Footer() {
 			localStorage.setItem("darkMode", "false");
 		}
 	}, [isDark]);
-
-	useEffect(() => {
-		setThisYear(new Date().getFullYear());
-	}, []);
 
 	return (
 		<div className="bg-background flex items w-full h-fit bottom-0 left-0 justify-between py-4 px-8 sm:px-8 md:px-16  z-20 border-t ">
