@@ -28,33 +28,7 @@
 			}
 		]
 	},
-	{
-		"title": "Information Systems Management and Programming Technician",
-		"company": "Professional School Ruiz Costa",
-		"date": "2018/2021",
-		"text": "What I learned during the course: \n\n- Master programming techniques, identify key programming languages, develop web applications, and program using object-oriented languages;\n\n- Analyze and implement Database Management Systems;\n\n- Utilize solutions based on Client/Server Architecture;\n\n- Install, configure, and maintain computers, networks, peripherals, operating systems, and software applications;\n\n- Administer and manage the security of IT systems and data communication networks.",
-		"type": "Education",
-		"experience_tags": ["Programming", "IT Technician"],
-		"experience_skills": [
-			"C++",
-			"C#",
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"PHP",
-			"Microsoft SQL Server",
-			"Network Administration",
-			"System Administration"
-		],
-		"experience_links": [
-			{
-				"url": "https://www.ruizcosta.edu.pt/cursos/gestao-e-programacao-de-sistemas-informaticos/",
-				"buttonContent": "See More",
-				"downloadableContent": "",
-				"type": "link"
-			}
-		]
-	},
+
 	{
 		"title": "Technologies and Information Systems for the Web",
 		"company": "ESMAD",
@@ -90,6 +64,33 @@
 			{
 				"url": "",
 				"buttonContent": "Diploma",
+				"type": "link"
+			}
+		]
+	},
+	{
+		"title": "Information Systems Management and Programming Technician",
+		"company": "Professional School Ruiz Costa",
+		"date": "2018/2021",
+		"text": "What I learned during the course: \n\n- Master programming techniques, identify key programming languages, develop web applications, and program using object-oriented languages;\n\n- Analyze and implement Database Management Systems;\n\n- Utilize solutions based on Client/Server Architecture;\n\n- Install, configure, and maintain computers, networks, peripherals, operating systems, and software applications;\n\n- Administer and manage the security of IT systems and data communication networks.",
+		"type": "Education",
+		"experience_tags": ["Programming", "IT Technician"],
+		"experience_skills": [
+			"C++",
+			"C#",
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"PHP",
+			"Microsoft SQL Server",
+			"Network Administration",
+			"System Administration"
+		],
+		"experience_links": [
+			{
+				"url": "https://www.ruizcosta.edu.pt/cursos/gestao-e-programacao-de-sistemas-informaticos/",
+				"buttonContent": "See More",
+				"downloadableContent": "",
 				"type": "link"
 			}
 		]
