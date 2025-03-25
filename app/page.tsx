@@ -46,7 +46,7 @@ export default function Home() {
 						<P>Come and get to know me and my work.</P>
 					</div>
 					<div id="buttonContainer" className="flex gap-4">
-						<Link href="files/Portfolio-EN-Website.pdf">
+						<Link href="files/Portfolio-EN-Website.pdf" target="_blank">
 							<AnimatedButton className="text-xl ">
 								Download CV <FileDown size={48} />
 							</AnimatedButton>
